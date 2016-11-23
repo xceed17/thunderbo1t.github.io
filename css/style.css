@@ -69,6 +69,19 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
+.titl{
+  font-family: Georgia,serif;
+  font size :10%;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.photo{
+  width: 90%;
+  height: 90%;
+}
+
 ::-webkit-selection {
   color: #fff;
   background: #52d3aa;
