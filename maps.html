@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Oxygen &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="Bala" />
+
+	<!--
+		Oxygen by gettemplates.co
+		Twitter: http://twitter.com/gettemplateco
+		URL: http://gettemplates.co
+	-->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<div class="gtco-loader"></div>
+	
+	
+	
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-xs-5 col-sm-3 ">
+					<img class ="photo" src="images/k.png" >
+				</div>
+		
+				<div class="col-xs-6 text-center menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="maps.html">XCEED</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="contactus.html">ContactUs</a></li>
+						<li><a href="sponsor.html">Sponsors</a></li>
+					</ul>
+				</div>
+
+
+				<div class="col-xs-5 col-sm-3 ">
+					<img class ="photo" src="images/unesco.png" >
+				</div>
+
+			</div>
+			
+		</div>
+	</nav>
+
+	<header  style="background-image:url(images/img_bg_1.jpg); height:130px">
+
+	</header>
+	
+	<div id="map" class="bg"></div>
+	
+
+	
+	
+<script>
+var map;
+function initMap() { 
+var Chennai = {lat: 13.082680, lng:80.270718}; 
+var Madurai = {lat: 9.886596, lng:78.074523}; 
+var Coimbatore = {lat: 11.112592, lng:77.035749}; 
+var Tirupati = {lat: 13.628756, lng: 79.419179}; 
+var Vellore = {lat:12.968076, lng:79.148261}; 
+var Salem = {lat:11.664325, lng: 78.146014}; 
+var Trichy = {lat: 10.790483, lng: 78.704673}; 
+var Suratkal = {lat: 22.255730, lng: 84.904721}; 
+var Pilani = {lat: 28.358016, lng:75.588799};
+var map = new google.maps.Map(document.getElementById('map'), { zoom: 4, center:Chennai});
+
+var Mad_content="<a href='temp.html'>Battle of Bots</a>" ;
+var Che_content="<a href='temp.html'>Battle of Bots</a>" ;
+var Coi_content="<ul style='list-style-type:circle'><li><a href='map_coimbatore.html'>Map your location</a></li><li><a href='arvr_coimbatore.html'>Augmented and Virtual Reality</li></a><li>Battle of Bots</li></ul>";
+var Tiru_content="<a href='temp.html'>Battle of Bots</a>" ;
+var Trichy_content="<a href='temp.html'>Battle of Bots</a>"  ;
+var Sur_content="<a href='temp.html'>Battle of Bots</a>"  ;
+var Pila_content="<a href='temp.html'>Battle of Bots</a>"  ;
+var Vell_content="<ul style='list-style-type:circle'><li><a href='temp.html'>Battle of Bots</a>  </li><li>Robotics Workshop </li></ul>";
+var salem_content="<ul style='list-style-type:disc'><li><a href='arvr_coimbatore.html'>Augmented and Virtual Reality</li></a><li>Tweet it like twitter </li><li><a href='ror_salem.html'>Ruby on Rails</li></a></ul>";
+
+var infowindow0 = new google.maps.InfoWindow({ content: Mad_content });
+var infowindow1 = new google.maps.InfoWindow({ content: Che_content });
+var infowindow2 = new google.maps.InfoWindow({ content: Coi_content });
+var infowindow3 = new google.maps.InfoWindow({ content: Tiru_content });
+var infowindow4 = new google.maps.InfoWindow({ content: Trichy_content });
+var infowindow5 = new google.maps.InfoWindow({ content: Sur_content });
+var infowindow6 = new google.maps.InfoWindow({ content: Pila_content });
+var infowindow7 = new google.maps.InfoWindow({ content: Vell_content });
+var infowindow8 = new google.maps.InfoWindow({ content: salem_content });
+  
+var marker0 = new google.maps.Marker({ position: Madurai ,map: map,title:'Thiagarajar College of Engineering,Madurai' }); 
+var marker1 = new google.maps.Marker({ position: Coimbatore ,map: map,title:'Coimbatore institute of technology' });
+var marker2 = new google.maps.Marker({ position: Tirupati ,map: map,title:'IIT Tirupathi'}); 
+var marker3 = new google.maps.Marker({ position: Vellore, map: map,title:'Vellore Institute of Technology,Vellore' }); 
+var marker4 = new google.maps.Marker({ position: Salem ,map: map ,title:'Annapoorana Engineering College,Salem'}); 
+var marker5 = new google.maps.Marker({ position: Trichy ,map: map ,title:'Trichy'}); 
+var marker6 = new google.maps.Marker({ position: Suratkal ,map: map ,title:'NIT Suratkal'}); 
+var marker7 = new google.maps.Marker({ position: Pilani ,map: map ,title:'BITS Pilani'}); 
+var marker8 = new google.maps.Marker({ position: Chennai ,map: map ,title:'Easwari Engineering College,Chennai'});
+marker0.addListener('click', function() { infowindow0.open(map, marker0); });
+
+marker1.addListener('click', function() { infowindow2.open(map, marker1); });
+marker2.addListener('click', function() { infowindow3.open(map, marker2); });
+marker3.addListener('click', function() { infowindow7.open(map, marker3); });
+marker4.addListener('click', function() { infowindow8.open(map, marker4); });
+marker5.addListener('click', function() { infowindow4.open(map, marker5); });
+marker6.addListener('click', function() { infowindow5.open(map, marker6); });
+marker7.addListener('click', function() { infowindow6.open(map, marker7); });
+marker8.addListener('click', function() { infowindow1.open(map, marker8); });
+
+ }
+
+</script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWWqiC71LSZF1OQMVB8kbiRELkWx_2TF8&callback=initMap"
+    async defer></script>
+
+
+		
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+<div class="footer">
+  <img src="images/trophy.png" id="trophyImage" height= 60 />
+  <p>Prizes worth INR 1,00,000</p>
+</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+<style type="text/css">
+	.h1{
+		font-family: "Times New Roman", Times, serif; 
+	}
+
+	  .footer #trophyImage {
+    display: inline;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+  }
+	
+    .footer p {
+    display: inline;
+    vertical-align: middle;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #00a8af;
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+
+a.one:link, a.one:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #00a8af;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+a.one:hover, a.one:active {
+    background-color:#00a8af;
+    color: white;
+font-size:150%;
+}
+
+a:link {
+    text-decoration: none;
+        color: darkgreenyellow;
+}
+
+a:visited {
+color: Black;
+    text-decoration: none;
+}
+
+a:hover {
+ color: blueviolet;
+    text-decoration: underline;
+    font-size: 150%;
+}
+
+a:active {
+color: blueviolet;
+    text-decoration: underline;
+}
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .bg{
+      	background: #00a8af;
+      	height: 100%;
+      }
+
+</style>	
+</html>
+
