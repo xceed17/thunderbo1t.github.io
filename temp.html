@@ -10,8 +10,24 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="gettemplates.co" />
 
+	<!--
+		Oxygen by gettemplates.co
+		Twitter: http://twitter.com/gettemplateco
+		URL: http://gettemplates.co
+	-->
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='	.text/s'> -->
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -34,62 +50,12 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<s	.criptrc="js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
 
 	<style>
-
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #000;
-    background-color: #00a8af;
-}
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #ffffff;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active1 {
-    background-color: #ffffa8;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    margin-left: 1px;
-    margin-right: 1px;
-   color:#000;
-    padding: 6px 12px;
-    border: 1px solid #000;
-    border-top: 100px;
-
-}
-
-
-
-
-
 	.h1{
 		font-family: "Times New Roman", Times, serif; 
 	}
@@ -100,13 +66,15 @@ ul.tab li a:focus, .active1 {
     width: auto;
     vertical-align: middle;
   }
+
+
 	
     .footer p {
     display: inline;
     vertical-align: middle;
   }
   .footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -118,18 +86,53 @@ ul.tab li a:focus, .active1 {
     padding: 10px 0;
   }
 
-  .leftp{
-  	align-items: left;
-  }
 
-  .pos{
-  	margin: 50px 10px 10px 10px;
+	.table-container {
+	  max-width: 1140px;
+	  position: relative;
+	  margin: 0 auto;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
 
-  }
-    .space{
-  	padding: 20px;
-  	margin: 20px;
-  }
+
+	.gtco-tabs .gtco-tab-nav li {
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  width: 12.5%;
+	  text-align: center;
+	  list-style: none;
+	  display: -moz-inline-stack;
+	  display: inline-block;
+	  zoom: 1;
+	  *display: inline;
+	}
+
+	body {
+	  font-family: "Work Sans", Arial, sans-serif;
+	  font-weight: 400;
+	  font-size: 16px;
+	  line-height: 1.7;
+	  color: #ffffff;
+	  background: #fff;
+	}
+
+
+	h2 {
+		color: #ffffff;
+		font-family: "Work Sans", Arial, sans-serif;
+		font-weight: 400;
+		margin: 0 0 20px 0;
+	}
+
+	.uppercase {
+		font-size: 14px;
+		color: #ffffff;
+		margin-bottom: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
 
 	</style>
 
@@ -144,7 +147,7 @@ ul.tab li a:focus, .active1 {
 	
 	<div id="page">
 	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
+		<div class="table-container">
 			<div class="row">
 				<div class="col-xs-5 col-sm-3 ">
 					<img class ="photo" src="images/k.png" >
@@ -171,101 +174,243 @@ ul.tab li a:focus, .active1 {
 	</nav>
 
 
-
 	<!--  BGIMAGE ALONG WITH TEXT ON IMAGE-->
 
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg); height:1100px ">
-		<div class="gtco-container">
-			
-				<div class="pos">
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+
+	<div style="padding-top: 20px">
+
+		<div id="gtco-services">
+			<div class="table-container">
+				
+				<div class="row animate-box">
 					
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+					<div class="gtco-tabs">
+						<ul class="gtco-tab-nav">
+							<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Intro</span></a></li>
+							<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Date & Venue</span></a></li>
+							<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Sessions</span></a></li>			
+							<li><a href="#" data-tab="4"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Requirements</span></a></li>			
+							<li><a href="#" data-tab="5"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Fees</span></a></li>				
+							<li><a href="#" data-tab="6"><span class="icon visible-xs"><i class="icon-bar-graph"></i></span><span class="hidden-xs">Rejistration</span></a></li>
+							<li><a href="#" data-tab="7"><span class="icon visible-xs"><i class="icon-bag"></i></span><span class="hidden-xs">Organizers</span></a></li>
+							<li><a href="#" data-tab="8"><span class="icon visible-xs"><i class="icon-box"></i></span><span class="hidden-xs">FAQ</span></a></li>
+						</ul>
 
-							<ul class="tab">
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">Intro</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Date')">Date & Venue</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sessions')">Sessions</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Requirements')">Requirements</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Fees')">Fees</a></li>
+						<!-- Tabs -->
+						<div class="gtco-tab-content-wrap">
 
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Registration')">Registration</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Organizers')">Organizers</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'FAQ')">FAQ</a></li>
-							</ul>
+							<div class="gtco-tab-content tab-content active" data-tab-content="1">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-command"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Web Design</h2>
+									<p >Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
 
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
 
-							<div id="Intro" class="tabcontent">
-  								<h3>Intro</h3>
-  								<p>Will Be Updated soon</p>
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="gtco-tab-content tab-content" data-tab-content="2">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-bar-graph"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Online Marketing</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Ready to use</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">100% Satisfaction</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="gtco-tab-content tab-content" data-tab-content="3">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-bag"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>e-Commerce</h2>
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Easy to shop</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">No credit card required</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+
+							<div class="gtco-tab-content tab-content" data-tab-content="4">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-box"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Logo &amp; Branding</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Pixel perfect</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">User Interface Expert</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="gtco-tab-content tab-content active" data-tab-content="5">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-command"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Web Design</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="gtco-tab-content tab-content active" data-tab-content="6">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-command"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Web Design</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="gtco-tab-content tab-content active" data-tab-content="7">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-command"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Web Design</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
 							</div>
 
 
-							<div id="Date" class="tabcontent">
-							  <p>Will Be Updated soon</p>
+							<div class="gtco-tab-content tab-content active" data-tab-content="8">
+								<div class="col-md-6">
+									<div class="icon icon-xlg">
+										<i class="icon-command"></i>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2>Web Design</h2>
+									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+
+									<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga molestiae asperiores obcaecati corporis sint illo facilis.</p>
+
+									<div class="row">
+										<div class="col-md-6">
+											<h2 class="uppercase">Keep it simple</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+										<div class="col-md-6">
+											<h2 class="uppercase">Less is more</h2>
+											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
+										</div>
+									</div>
+
+								</div>
 							</div>
-
-							<div id="Sessions" class="tabcontent">
-							
-							<p>Will Be Updated soon</p>
-							  
-							  </div>
-
-
-							<div id="Requirements" class="tabcontent">
-							 <p>Will Be Updated soon</p>
-							</div>
-
-							<div id="Fees" class="tabcontent">
-							<p>Will Be Updated soon</p>
-
-							</div>
-
-							<div id="Registration" class="tabcontent">
-							<p>Will Be Updated soon</p>
-
-							</div>
-
-							<div id="Organizers" class="tabcontent">
-							
-								<p>Will Be Updated soon</p>
-							</div>
-
-							<div id="FAQ" class="tabcontent">
-
-								<p>Will Be Updated soon</p>
-
-							</div>
-
-
-							</div>
-
-
-
-
-							<script>
-							function openCity(evt, cityName) {
-							    var i, tabcontent, tablinks;
-							    tabcontent = document.getElementsByClassName("tabcontent");
-							    for (i = 0; i < tabcontent.length; i++) {
-							        tabcontent[i].style.display = "none";
-							    }
-							    tablinks = document.getElementsByClassName("tablinks");
-							    for (i = 0; i < tablinks.length; i++) {
-							        tablinks[i].className = tablinks[i].className.replace(" active1", "");
-							    }
-							    document.getElementById(cityName).style.display = "block";
-							    evt.currentTarget.className += " active1";
-							}
-
-							// Get the element with id="defaultOpen" and click on it
-							document.getElementById("defaultOpen").click();
-							</script>
-
-
-				</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</header>
 	
 
@@ -273,13 +418,14 @@ ul.tab li a:focus, .active1 {
 
 
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
-	<div class="footer">
+<div class="footer">
   <img src="images/trophy.png" id="trophyImage" height= 60 />
   <p>Prizes worth INR 1,00,000</p>
 </div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
