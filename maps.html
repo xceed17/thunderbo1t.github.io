@@ -49,6 +49,12 @@
 	</head>
 
 	<style>
+
+
+		.clear {
+			 clear: both; 
+			 height: 60px;
+		 }
 		.h1{
 		font-family: "Times New Roman", Times, serif; 
 		}
@@ -111,7 +117,18 @@ var Salem = {lat:11.664325, lng: 78.146014};
 var Trichy = {lat: 10.790483, lng: 78.704673}; 
 var Suratkal = {lat: 22.255730, lng: 84.904721}; 
 var Pilani = {lat: 28.358016, lng:75.588799};
-var map = new google.maps.Map(document.getElementById('map'), { zoom: 4, center:Chennai});
+
+var mapOptions = {
+                    center: new google.maps.LatLng(18.0574 , 78.9382),
+                    zoom: 5,
+
+                    //zoom: 11,
+                    //center: new google.maps.LatLng(40.6700, -73.9400), 
+
+                    styles: [{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","elementType":"all","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]}]
+                };
+var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
 
 var Mad_content="<a href='temp.html'>Battle of Bots</a>" ;
 var Che_content="<a href='temp.html'>Battle of Bots</a>" ;
@@ -218,8 +235,6 @@ marker8.addListener('click', function() { infowindow1.open(map, marker8); });
 <br>
 
 <!--   INFO BELOW  BELOW BACKGROUND IMAGE-->
-
-
 
 	<div class="footer">
 	  <img src="images/trophy.png" id="trophyImage" height= 60 />
