@@ -19,9 +19,36 @@ body {
   background: #fff;
 }
 
+.footer #trophyImage {
+  display: inline;
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footer p {
+  display: inline;
+  vertical-align: middle;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #00a8af;
+  color: rgb(255,255,255);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  clear:both;
+  z-index: 999;
+}
+
 #page {
   position: relative;
-  overflow-x: hidden;
+  overflow-x: none;
   width: 100%;
   height: 100%;
   -webkit-transition: 0.5s;
@@ -29,7 +56,7 @@ body {
   transition: 0.5s;
 }
 .offcanvas #page {
-  overflow: hidden;
+  overflow: none;
   position: absolute;
 }
 .offcanvas #page:after {
@@ -67,6 +94,19 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+}
+
+.titl{
+  font-family: Georgia,serif;
+  font size :10%;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-weight: 300;
+}
+
+.photo{
+  width: 90%;
+  height: 90%;
 }
 
 ::-webkit-selection {
