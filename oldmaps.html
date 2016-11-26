@@ -3,11 +3,17 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>XCEED</title>
+	<title>Oxygen &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
-	<meta name="author" content="gettemplates.co" />
+	<meta name="author" content="Bala" />
+
+	<!--
+		Oxygen by gettemplates.co
+		Twitter: http://twitter.com/gettemplateco
+		URL: http://gettemplates.co
+	-->
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -47,65 +53,131 @@
 	<![endif]-->
 
 	</head>
-
-	<style>
-
-
-		.clear {
-			 clear: both; 
-			 height: 60px;
-		 }
-		.h1{
+	<style type="text/css">
+	.h1{
 		font-family: "Times New Roman", Times, serif; 
-		}
-
-		a.one:link, a.one:visited {
-	    background-color: white;
-	    color: black;
-	    border: 2px solid #00a8af;
-	    padding: 10px 20px;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
 	}
-
-	a.one:hover, a.one:active {
-		background-color:#00a8af;
-		color: white;
-		font-size:150%;
-	}
-
-	a:link {
-		text-decoration: none;
-	    color: darkgreenyellow;
-	}
-
-	a:visited {
-		color: Black;
-		text-decoration: none;
-	}
-
-	a:hover {
-		color: blueviolet;
-    	text-decoration: underline;
-	    font-size: 150%;
-	}
-
-	a:active {
-		color: blueviolet;
-	    text-decoration: underline;
-	}
+	  .footer #trophyImage {
+    display: inline;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+  }
+	
+    .footer p {
+    display: inline;
+    vertical-align: middle;
+  }
+  .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #00a8af;
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+a.one:link, a.one:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #00a8af;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.one:hover, a.one:active {
+    background-color:#00a8af;
+    color: white;
+font-size:150%;
+}
+a:link {
+    text-decoration: none;
+        color: darkgreenyellow;
+}
+a:visited {
+color: Black;
+    text-decoration: none;
+}
+a:hover {
+ color: blueviolet;
+    text-decoration: underline;
+    font-size: 150%;
+}
+a:active {
+color: blueviolet;
+    text-decoration: underline;
+}
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-      	padding-top: 110px;
         height: 100%;
-        width: 100%;
       }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	      
+     
+</style>	
 
-	</style>
 
-	<script>
+	<body>
+		<div class="gtco-loader"></div>
+	
+	
+	
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-xs-5 col-sm-3 ">
+					<img class ="photo" src="images/k.png" >
+				</div>
+		
+				<div class="col-xs-6 text-center menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="maps.html">XCEED</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="contactus.html">ContactUs</a></li>
+						<li><a href="sponsor.html">Sponsors</a></li>
+					</ul>
+				</div>
+
+
+				<div class="col-xs-5 col-sm-3 ">
+					<img class ="photo" src="images/unesco.png" >
+				</div>
+
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	
+
+	
+	
+<script>
 var map;
 function initMap() { 
 var Chennai = {lat: 13.082680, lng:80.270718}; 
@@ -175,79 +247,20 @@ marker8.addListener('click', function() { infowindow1.open(map, marker8); });
 </script>
 
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWWqiC71LSZF1OQMVB8kbiRELkWx_2TF8&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWWqiC71LSZF1OQMVB8kbiRELkWx_2TF8&callback=initMap"
     async defer></script>
-    <script src="/assets/gmap3.js?body=1" type="text/javascript"></script>
 
 
-	<body>
 		
-
-
-
-<!--  MENU   ALONG WITH BGIMAGE-->
-
-	<div class="gtco-loader"></div>
-	
-	<div id="page">
-	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-xs-5 col-sm-3 ">
-					<img class ="photo" src="images/k.png" >
-				</div>
-		
-				<div class="col-xs-6 text-center menu-1">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li  class="active"><a href="maps.html">XCEED</a></li>
-						<li><a href="#">Register</a></li>
-						<li><a href="contactus.html">ContactUs</a></li>
-						<li><a href="sponsor.html">Sponsors</a></li>
-					</ul>
-				</div>
-
-
-				<div class="col-xs-5 col-sm-3 ">
-					<img class ="photo" src="images/unesco.png" >
-				</div>
-
-			</div>
-			
-		</div>
-	</nav>
-
-
-	<!--  BGIMAGE ALONG WITH TEXT ON IMAGE-->
-
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc">
-							<div id="map"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	
-
-<br>
-
-<!--   INFO BELOW  BELOW BACKGROUND IMAGE-->
-
-	<div class="footer">
-	  <img src="images/trophy.png" id="trophyImage" height= 60 />
-	  <p>Prizes worth INR 1,00,000</p>
-	</div>
-
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
+<div class="footer">
+  <img src="images/trophy.png" id="trophyImage" height= 60 />
+  <p>Prizes worth INR 1,00,000</p>
+</div>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -268,4 +281,3 @@ marker8.addListener('click', function() { infowindow1.open(map, marker8); });
 
 	</body>
 </html>
-

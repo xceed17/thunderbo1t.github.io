@@ -43,6 +43,7 @@ body {
   text-transform: uppercase;
   padding: 10px 0;
   clear:both;
+  z-index: 999;
 }
 
 #page {
