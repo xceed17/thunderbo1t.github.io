@@ -10,6 +10,34 @@
 * 	Template Style 
 *
 * ======================================================= */
+    .footer #trophyImage {
+    display: inline;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+  }
+  
+    .footer p {
+    display: inline;
+    vertical-align: middle;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #00a8af;
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+
+
+
+
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -20,7 +48,7 @@ body {
 }
 
 .hello{
-  
+
 }
 
 
