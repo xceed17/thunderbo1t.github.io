@@ -52,75 +52,6 @@
 		font-family: "Times New Roman", Times, serif; 
 	}
 
-/* newly added style*/
-.gtco-cover {
-  height: 230px;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  float: left;
-  width: 100%;
-}
-.gtco-cover .overlay {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-.gtco-cover > .gtco-container {
-  position: relative;
-  z-index: 10;
-}
-.gtco-container-lid {
-  max-width: 1140px;
-  position: relative;
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover {
-    height: 600px;
-  }
-}
-.gtco-cover .display-t,
-.gtco-cover .display-tc {
-  height: 380px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover .display-t,
-  .gtco-cover .display-tc {
-    height: 600px;
-  }
-}
-.gtco-cover.gtco-cover-sm {
-  height: 600px;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm {
-    height: 400px;
-  }
-}
-.gtco-cover.gtco-cover-sm .display-t,
-.gtco-cover.gtco-cover-sm .display-tc {
-  height: 600px;
-  display: table;
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .gtco-cover.gtco-cover-sm .display-t,
-  .gtco-cover.gtco-cover-sm .display-tc {
-    height: 400px;
-  }
-}
- 
- /* new feature    */
 	</style>
 
 	<body>
@@ -163,7 +94,7 @@
 
 	<!--  BGIMAGE ALONG WITH TEXT ON IMAGE-->
 
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg)">
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg); height: 300px">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
