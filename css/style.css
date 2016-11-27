@@ -370,7 +370,6 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 600px;
   }
 }
-
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
   height: 900px;
@@ -817,7 +816,7 @@ form label {
 .gtco-tabs .gtco-tab-nav {
   clear: both;
   margin: 0 0 3em 0;
-  padding: 1px;
+  padding: 3px;
   float: left;
   width: 100%;
   background: #f2f2f2;
@@ -1432,29 +1431,5 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
-
-.footer #trophyImage {
-    display: inline;
-    height: 40px;
-    width: auto;
-    vertical-align: middle;
-  }
-  
-    .footer p {
-    display: inline;
-    vertical-align: middle;
-  }
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: #00a8af;
-    color: rgb(255,255,255);
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px 0;
-  }
 
 /*# sourceMappingURL=style.css.map */
