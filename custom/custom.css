@@ -56,3 +56,11 @@
   content: "\e907";
 }
 
+
+.icon-arrow-up:before {
+  content: "\e908";
+}
+
+.icon-linkedin:before {
+  content: "\e909";
+}
