@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -65,7 +64,6 @@
 		.h1{
 		font-family: "Times New Roman", Times, serif; 
 		}
-
 		a.one:link, a.one:visited {
 	    background-color: white;
 	    color: black;
@@ -75,29 +73,24 @@
 	    text-decoration: none;
 	    display: inline-block;
 	}
-
 	a.one:hover, a.one:active {
 		background-color:#00a8af;
 		color: white;
 		font-size:150%;
 	}
-
 	a:link {
 		text-decoration: none;
 	    color: darkgreenyellow;
 	}
-
 	a:visited {
 		color: Black;
 		text-decoration: none;
 	}
-
 	a:hover {
 		color: blueviolet;
     	text-decoration: underline;
 	    font-size: 150%;
 	}
-
 	a:active {
 		color: blueviolet;
 	    text-decoration: underline;
@@ -110,12 +103,12 @@
 	width: 100%;
 	border-radius: 30px;
 	}
-
 	html, body {
         height: 100%;
         margin: 0;
         padding: 0;
      }
+
 
 	</style>
 
@@ -130,31 +123,25 @@
 		var Vellore = {lat:12.968076, lng:79.148261}; 
 		var Salem = {lat:11.664325, lng: 78.146014}; 
 		var Trichy = {lat: 10.790483, lng: 78.704673}; 
-		var Suratkal = {lat: 22.255730, lng: 84.904721}; 
+		var Suratkal = {lat: 12.9807, lng: 74.8031}; 
 		var Pilani = {lat: 28.358016, lng:75.588799};
-
 		var mapOptions = {
 		                    center: new google.maps.LatLng(18.0574 , 78.9382),
 		                    zoom: 5,
-
 		                    //zoom: 11,
 		                    //center: new google.maps.LatLng(40.6700, -73.9400), 
-
 		                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b6dae0"},{"visibility":"on"}]}]
 		                };
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-
-		var Mad_content="<a href='temp.html'>Battle of Bots</a>" ;
-		var Che_content="<a href='temp.html'>Battle of Bots</a>" ;
-		var Coi_content="<ul style='list-style-type:circle'><li><a href='map_coimbatore.html'>Map your location</a></li><li><a href='arvr_coimbatore.html'>Augmented and Virtual Reality</li></a><li>Battle of Bots</li></ul>";
-		var Tiru_content="<a href='temp.html'>Battle of Bots</a>" ;
-		var Trichy_content="<a href='temp.html'>Battle of Bots</a>"  ;
-		var Sur_content="<a href='temp.html'>Battle of Bots</a>"  ;
-		var Pila_content="<a href='temp.html'>Battle of Bots</a>"  ;
-		var Vell_content="<ul style='list-style-type:circle'><li><a href='temp.html'>Battle of Bots</a>  </li><li>Robotics Workshop </li></ul>";
-		var salem_content="<ul style='list-style-type:disc'><li><a href='arvr_coimbatore.html'>Augmented and Virtual Reality</li></a><li>Tweet it like twitter </li><li><a href='ror_salem.html'>Ruby on Rails</li></a></ul>";
-
+		var Mad_content="<a href='bob_madurai.html'>Battle of Bots</a>" ;
+		var Che_content="<a href='bob_chennai.html'>Battle of Bots</a>" ;
+		var Coi_content="<ul style='list-style-type:circle'><li><a href='map_coimbatore.html'>Map your location</a></li><li><a href='arvr_coimbatore.html'>Augmented and Virtual Reality</li></a><li><a href='bob_coimbatore.html'>Battle of Bots</a></li></ul>";
+		var Tiru_content="<a href='bob_tirupathi.html'>Battle of Bots</a>" ;
+		var Trichy_content="<a href='bob_trichy.html'>Battle of Bots</a>"  ;
+		var Sur_content="<a href='bob_surathkal.html'>Battle of Bots</a>"  ;
+		var Pila_content="<a href='bob_bits.html'>Battle of Bots</a>"  ;
+		var Vell_content="<ul style='list-style-type:circle'><li><a href='bob_vellore.html'>Battle of Bots</a>  </li><li>Robotics Workshop </li></ul>";
+		var salem_content="<ul style='list-style-type:disc'><li><a href='arvr_salem.html'>Augmented and Virtual Reality</a></li><li><a href='ror_salem.html'>Ruby on Rails</li></a></ul>";
 		var infowindow0 = new google.maps.InfoWindow({ content: Mad_content });
 		var infowindow1 = new google.maps.InfoWindow({ content: Che_content });
 		var infowindow2 = new google.maps.InfoWindow({ content: Coi_content });
@@ -175,7 +162,6 @@
 		var marker7 = new google.maps.Marker({ position: Pilani ,map: map ,title:'BITS Pilani'}); 
 		var marker8 = new google.maps.Marker({ position: Chennai ,map: map ,title:'Easwari Engineering College,Chennai'});
 		marker0.addListener('click', function() { infowindow0.open(map, marker0); });
-
 		marker1.addListener('click', function() { infowindow2.open(map, marker1); });
 		marker2.addListener('click', function() { infowindow3.open(map, marker2); });
 		marker3.addListener('click', function() { infowindow7.open(map, marker3); });
@@ -184,7 +170,6 @@
 		marker6.addListener('click', function() { infowindow5.open(map, marker6); });
 		marker7.addListener('click', function() { infowindow6.open(map, marker7); });
 		marker8.addListener('click', function() { infowindow1.open(map, marker8); });
-
 		}
 	</script>
 
@@ -255,39 +240,69 @@
 
 							<div style="padding-top: 40px">
 								<table class="table table-bordered table-hover">
-						            <thead class="thead-inverse">
-						              <tr>
-						                <th>Date</th>
-						                <th>City</th>
-						                <th>College</th>
-						                <th>Event</th>
-						              </tr>
-						            </thead>
-						            <tr scope="row">
-						              <td>17-09-2016 & 18-09-2016</td>
-						              <td>Salem</td>
-						              <td>Annapoorana Engineering College</td>
-						              <td>Ruby on Rails</td>
-						            </tr>
-						            <tr scope="row">
-						              <td>17-09-2016 & 18-09-2016</td>
-						              <td>Salem</td>
-						              <td>Annapoorana Engineering College</td>
-						              <td>Augmented Reality and Virtual Reality</td> 
-						             </tr>          
-						            <tr scope="row">
-						              <td>10-12-2016 & 11-12-2016</td>
-						              <td>Coimbatore</td>
-						              <td>Coimbatore Institute of Technology</td>
-						              <td>Augmented Reality and Virtual Reality</td> 
-						            </tr>
-						            <tr scope="row">
-						              <td>10-12-2016 & 11-12-2016</td>
-						              <td>Coimbatore</td>
-						              <td>Coimbatore Institute of Technology</td>
-						              <td>Map your Location</td> 
-						            </tr>
-          						</table>
+			                        <thead class="thead-inverse">
+			                          <tr>
+			                            
+			                            <th>City Names</th>
+			                            <th>Date</th>
+			                            <th>Venue</th>
+			                          </tr>
+			                        </thead>
+			                        <tr scope="row">
+			                          <td>Chennai</td>
+			                          <td>January 21,22</td>
+			                          <td>Easwari Engineering College</td>
+			                           
+			                        </tr>
+			                        <tr scope="row">
+			                          <td>Coimbatore</td>
+			                          <td>December 10,11</td>                          
+			                          <td>Coimbatore Institute of Technology</td>
+			                          
+			                        </tr>
+
+			                        <tr scope="row">
+			                          <td>Madurai</td>
+			                          <td>January 21,22</td>                          
+			                          <td>Thiagarajar College of Engineering</td>
+			                          
+			                        </tr>
+
+			                        <tr scope="row">                          
+			                          <td>Tirupati</td>
+			                          <td>January 7,8</td>
+			                          <td>IIT Tirupati</td>  
+			                        </tr>
+			                        
+			                        <tr scope="row">
+			                          <td>Vellore</td>
+			                          <td>January 21,22</td>                          
+			                          <td>Vellore Institute of Technology</td> 
+			                        </tr>
+
+			                        <tr scope="row">
+			                          <td>Salem</td>
+			                          <td>September 17,18</td>                          
+			                          <td>Annapoorana Engineering College</td>
+			                        </tr>
+			                        
+			                        <tr scope="row">
+			                          <td>Trichy</td>
+			                          <td>Will be informed soon</td>
+			                          <td>Will be informed soon</td> 
+			                        </tr>
+			                        <tr scope="row">                          
+			                          <td>Suratkal</td>
+			                          <td>October 2,3</td>
+			                          <td>NIT Suratkal</td> 
+			                        </tr>
+			                        <tr scope="row">                          
+			                          <td>Pilani</td>
+			                          <td>October 17,18</td>
+			                          <td>BITS Pilani</td> 
+			                        </tr>
+			                      </table>
+
           					</div>
 					</div>
 				</div>
@@ -333,4 +348,3 @@
 
 	</body>
 </html>
-

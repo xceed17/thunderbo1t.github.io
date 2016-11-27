@@ -25,7 +25,7 @@
 }
 
 
-.icon-calender, .icon-credit, .icon-faq ,.icon-information, .icon-pen , .icon-people , .icon-requirements, .icon-time{
+.icon-rules,.icon-calender, .icon-credit, .icon-faq ,.icon-information, .icon-pen , .icon-people , .icon-requirements, .icon-time{
   color: #4FD1A8;
 }
 
@@ -63,4 +63,9 @@
 
 .icon-linkedin:before {
   content: "\e909";
+}
+
+
+.icon-rules:before {
+  content: "\e90a";
 }
