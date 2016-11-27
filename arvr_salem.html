@@ -10,13 +10,30 @@
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="gettemplates.co" />
 
+	<!--
+		Oxygen by gettemplates.co
+		Twitter: http://twitter.com/gettemplateco
+		URL: http://gettemplates.co
+	-->
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='	.text/s'> -->
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="custom/custom.css">
+	
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -34,100 +51,56 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<s	.criptrc="js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
 
 	<style>
-
-ul.tab {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #000;
-    background-color: #00a8af;
-}
-
-/* Float the list items side by side */
-ul.tab li {float: left;}
-
-/* Style the links inside the list items */
-ul.tab li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of links on hover */
-ul.tab li a:hover {
-    background-color: #ffffff;
-}
-
-/* Create an active/current tablink class */
-ul.tab li a:focus, .active1 {
-    background-color: #ffffa8;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #000;
-    border-top: 100px;
-    color:#000;
-}
-
-
-
-
-
 	.h1{
 		font-family: "Times New Roman", Times, serif; 
 	}
 
-	  .footer #trophyImage {
-    display: inline;
-    height: 40px;
-    width: auto;
-    vertical-align: middle;
-  }
-	
-    .footer p {
-    display: inline;
-    vertical-align: middle;
-  }
-  .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: #00a8af;
-    color: rgb(255,255,255);
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px 0;
-  }
 
-  .leftp{
-  	align-items: left;
-  }
+	.table-container {
+	  max-width: 1200px;
+	  position: relative;
+	  margin: 0 auto;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
 
-  
-  .space{
-  	padding: 10px;
-  	margin: 10px;
-  }
+	.gtco-container {
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+
+
+
+	.gtco-tabs .gtco-tab-nav li {
+	  float: left;
+	  margin: 0;
+	  padding: 0;
+	  width: 12.5%;
+	  text-align: center;
+	  list-style: none;
+	  display: -moz-inline-stack;
+	  display: inline-block;
+	  zoom: 1;
+	  *display: inline;
+	}
+
+
+
+
 	</style>
 
 	<body>
 		
+
 
 
 
@@ -145,8 +118,8 @@ ul.tab li a:focus, .active1 {
 		
 				<div class="col-xs-6 text-center menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="maps.html">XCEED</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="maps.html">XCEED</a></li>
 						<li><a href="#">Register</a></li>
 						<li><a href="contactus.html">ContactUs</a></li>
 						<li><a href="sponsor.html">Sponsors</a></li>
@@ -163,234 +136,257 @@ ul.tab li a:focus, .active1 {
 		</div>
 	</nav>
 
-
 	<!--  BGIMAGE ALONG WITH TEXT ON IMAGE-->
 
-	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/img_bg_1.jpg); height: 300px">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<ul class="tab">
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Intro')" id="defaultOpen">Intro</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Date')">Date & Venue</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Sessions')">Sessions</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Requirements')">Requirements</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Fees')">Fees</a></li>
-
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Registration')">Registration</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Organizers')">Organizers</a></li>
-								  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'FAQ')">FAQ</a></li>
-							</ul>
-
-
-							<div id="Intro" class="tabcontent">
-  								<h3>Intro</h3>
-  								<p>Wouldn’t it be absolute fun to actually run in Temple Run?! And
-how exciting it would be if you could create one such application all by yourself?
-No matter how many ever games we play, virtual games never fail to interest us.Yes! We are coming to teach you the skill of making this magic a reality. Time to learn the two sides of the same coin – augmented reality and virtual reality- together.
-A workshop where the participants start learning from the basics of AR and VR and move on to advanced concepts all the way till they are equipped with the skills to develop their own apps and experience them using the Google Gears, all in a span of 2 days.This Workshop is not constrained to any departments.</p>
-							</div>
-
-							<div id="Date" class="tabcontent">
-							  <h3>
-  								<p>Date: 17/09/2016 and 18/09/2016<br>
-								Venue: Annapoorana Engineering College, Sankari Main road, Salem</p></h3>
-							</div>
-
-							<div id="Sessions" class="tabcontent">
-							
-							  <center>
-							  <table>
-								<tr>
-								<th colspan = 2> DAY1</th>
-								<th> DAY2</th>
-								</tr>
-
-								<tr>
-								<th colspan = 2> 9AM to LUNCH BREAK</th>
-								<th> 9AM to 1PM</th>
-								</tr>
-
-								<tr>
-								<td colspan = 2> 1.Assets intro</td>
-								<td> 1.Introduction to Vuforia SDK</td>
-								</tr>
-
-
-								<tr>
-								<td colspan = 2> 2.Unity intro</td>
-								<td> 2.Trackers introduction and design</td>
-								</tr>
-
-
-
-								<tr>
-								<td colspan = 2> 3.Unity Environment intro</td>
-								<td> 3.Object Insertion for AR experience</td>
-								</tr>
-
-
-								<tr>
-								<td colspan = 2> 4.World design</td>
-								<td> 4.Testing the app created using Unity</td>
-								</tr>
-
-
-								<tr>
-								<td colspan = 2> 5.Character Design</td>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<td colspan = 2> 6.Character Motion Capture Data Integration</td>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<th colspan = 2> After lunch</th>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<td colspan = 2> 1.Virtual Reality SDK Integration</td>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<td colspan = 2> 2.Testing the Virtual Environment</td>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<td colspan = 2> 3.Building the Android APK</td>
-								<td> </td>
-								</tr>
-
-								<tr>
-								<td colspan = 2>4. Real-Time Testing</td>
-								<td> </td>
-								</tr>
-								</table>
-
-								</center>
-
-							  </p>
-							  </div>
-
-
-							<div id="Requirements" class="tabcontent">
-							  <ol>
-							  <li>Laptop is not compulsory. You can bring if possible ;Installation software will be given to the participants through their Pendrives.</li>
-							  <li>Due to the heavy load of applications, laptops should have 3 GB RAM and 10GB free space. (This maybe difficult to ensure, but installation of the software on other laptops cannot be guaranteed)</li>
-							  
-							  <li>Participants would need sockets for charging as well, since they would be using their laptops throughout.</li>
-
-							</div>
-
-							<div id="Fees" class="tabcontent">
-							<p><h3>INR 600/- per person</h3></p>
-
-							</div>
-
-							<div id="Registration" class="tabcontent">
-							<p><a href="https://goo.gl/forms/DMCwxmHAOX0nqUT22">CLICK TO REGISTER </a></p>
-
-							</div>
-
-							<div id="Organizers" class="tabcontent">
-							<center>
-							<table>
-							<tr>
-								<th class="space">RAHUL AP</th>
-								<th class="space">MICHAEL JERNIL</th>
-							</tr>
-							<tr>
-								<td class="space">
-									<img src="images\Rahul.jpeg" style="width: 178px ; height: 168px" >
-								</td>
-								<td class="space">
-									<img src="images\Jernil.jpg" style="width: 178px ; height: 168px" >
-								</td>
-							</tr>
-							<tr>
-								<td class="space">
-									Contact:  <a href="https://www.linkedin.com/in/rahulap-in"><i class="icon-linkedin"></i></a>
-								</td>
-
-								<td class="space">
-									Contact:  <a href="https://in.linkedin.com/in/jernil"><i class="icon-linkedin"></i></a>
-								</td>
-							</tr>
-							</table>
-							</center>
-							</div>
-
-							<div id="FAQ" class="tabcontent">
-							<p>1. Will participation certificate will be provided?<br>You will receive participation certificate of kurukshetra</p>
-
-							<p>2. Do I need to carry laptops?<br>No. You can bring if possible</p>
-
-							<p>3. Do I need to have programming knowledge?<br>No, your interest is most suffice.</p>
-
-							<p><strong>4.Do I need to carry any ID proof for the visit?<br>It is mandatory to carry your college ID card.</strong></p>
-
-							<p>5.What is the cancellation/refund policy?<br>No refund on cancellation/no-show at the event.</p>
-
-							<p>6. Is there a dress code to be followed?<br>Wear comfortable semi-formals</p>
-
-							<p>7. Will Lunch be provided?<br>No, Lunch will not be provided.</p>
-
-							</div>
-
-
-							</div>
-
-
-
-
-							<script>
-							function openCity(evt, cityName) {
-							    var i, tabcontent, tablinks;
-							    tabcontent = document.getElementsByClassName("tabcontent");
-							    for (i = 0; i < tabcontent.length; i++) {
-							        tabcontent[i].style.display = "none";
-							    }
-							    tablinks = document.getElementsByClassName("tablinks");
-							    for (i = 0; i < tablinks.length; i++) {
-							        tablinks[i].className = tablinks[i].className.replace(" active1", "");
-							    }
-							    document.getElementById(cityName).style.display = "block";
-							    evt.currentTarget.className += " active1";
-							}
-
-							// Get the element with id="defaultOpen" and click on it
-							document.getElementById("defaultOpen").click();
-							</script>
-
-
+					<div class="display-t" style="height:300px;">
+						<div class="display-tc animate-box" style="height:300px;"  data-animate-effect="fadeIn">
+							<img src="images/xceedfulllogo.png" style="height: 200px;width: 300px;">
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 	</header>
+
+
+	<div id="gtco-services">
+		<div class="gtco-container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+					<h2> Augmented and virtual reality -  Annapoorana Engineering College - Salem  </h2>
+				</div>
+			</div>
+
+			<div class="row animate-box">
+				
+				<div class="gtco-tabs">
+					<ul class="gtco-tab-nav">
+						<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-information"></i></span><span class="hidden-xs">Intro</span></a></li>
+						<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-calender"></i></span><span class="hidden-xs">Date & Venue</span></a></li>
+						<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-time"></i></span><span class="hidden-xs">Sessions</span></a></li>			
+						<li><a href="#" data-tab="4"><span class="icon visible-xs"><i class="icon-requirements"></i></span><span class="hidden-xs">Requirements</span></a></li>			
+						<li><a href="#" data-tab="5"><span class="icon visible-xs"><i class="icon-credit"></i></span><span class="hidden-xs">Fees</span></a></li>				
+						<li><a href="#" data-tab="6"><span class="icon visible-xs"><i class="icon-pen"></i></span><span class="hidden-xs">Registration</span></a></li>
+						<li><a href="#" data-tab="7"><span class="icon visible-xs"><i class="icon-people"></i></span><span class="hidden-xs">Organizers</span></a></li>
+						<li><a href="#" data-tab="8"><span class="icon visible-xs"><i class="icon-faq"></i></span><span class="hidden-xs">FAQ</span></a></li>
+					</ul>
+
+					<!-- Tabs -->
+					<div class="gtco-tab-content-wrap">
+
+						<div class="gtco-tab-content tab-content active" data-tab-content="1">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-information"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>Intro</h2>
+								
+								<p>Wouldn’t it be absolute fun to actually run in Temple Run?! And
+how exciting it would be if you could create one such application all by yourself?
+No matter how many ever games we play, virtual games never fail to interest us.Yes! We are coming to teach you the skill of making this magic a reality. Time to learn the two sides of the same coin – augmented reality and virtual reality- together.
+A workshop where the participants start learning from the basics of AR and VR and move on to advanced concepts all the way till they are equipped with the skills to develop their own apps and experience them using the Google Gears, all in a span of 2 days.This Workshop is not constrained to any departments.</p>
+
+
+
+							</div>
+						</div>
+
+						<div class="gtco-tab-content tab-content" data-tab-content="2">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-calender"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-6">
+										<h1>Date</h1>
+										<h3>
+										<ul>
+											<li>17/09/2016</li>
+											<li>18/09/2016</li>
+										</ul>
+										</h3>
+									</div>
+									<div class="col-md-6">
+										<h1>Venue</h1>
+										<h3>
+										<p>Annapoorana Engineering College, Sankari Main road, Salem</p>
+										<h3>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="gtco-tab-content tab-content" data-tab-content="3">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-time"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h1>Sessions</h1>
+								<div class="row">
+									<div class="col-md-6">
+										<h2 class="upperclass">DAY1</h2>
+										<h2 class="upperclass">9AM to LUNCH BREAK</h2>
+										<ol>
+											<li>Assets intro</li>
+											<li>Unity intro</li>
+											<li>Unity Environment intro</li>
+											<li>World design</li>
+											<li>Character Design</li>
+											<li>Character Motion Capture Data Integration</li>
+										</ol>	
+										<h2 class="upperclass"> After lunch</h2>
+										<ol>
+											<li>Virtual Reality SDK Integration</li>
+											<li>Testing the Virtual Environment	</li>
+											<li>Building the Android APK</li>
+											<li>Real-Time Testing</li>
+										</ol>
+									</div>
+									<div class="col-md-6">
+										<h2 class="upperclass">DAY2</h2>
+										<h2 class="upperclass">9AM to 1pm</h2>
+										<ol>
+											<li>Introduction to Vuforia SDK</li>
+											<li>Trackers introduction and design</li>
+											<li>Object Insertion for AR experience</li>
+											<li>Testing the app created using Unity</li>
+										</ol>	
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="gtco-tab-content tab-content" data-tab-content="4">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-requirements"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>Requirements</h2>
+								<ol>
+								  <li>Laptop is not compulsory. You can bring if possible ;Installation software will be given to the participants through their Pendrives.</li>
+								  <li>Due to the heavy load of applications, laptops should have 3 GB RAM and 10GB free space. (This maybe difficult to ensure, but installation of the software on other laptops cannot be guaranteed)</li>
+								  
+								  <li>Participants would need sockets for charging as well, since they would be using their laptops throughout.</li>
+							    </ol>
+							</div>
+						</div>
+
+						<div class="gtco-tab-content tab-content" data-tab-content="5">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-credit"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>Fees</h2>
+								<p><h3>INR 600/- per person</h3></p>
+							</div>
+						</div>
+
+						<div class="gtco-tab-content tab-content" data-tab-content="6">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-pen"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>Registration</h2>
+								
+									<p><a href="https://goo.gl/forms/DMCwxmHAOX0nqUT22">CLICK TO REGISTER </a></p>
+
+
+							</div>
+						</div>
+						<div class="gtco-tab-content tab-content" data-tab-content="7">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-people"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>Organizers</h2>
+								<div class="row">
+									<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
+											<div class="gtco-staff" style="padding-left: 25px">
+												<img src="images\Rahul.jpeg" alt="" style="width:190px;height:190px">
+												<h3>RAHUL AP</h3>
+												Contact:	<a href="https://www.linkedin.com/in/rahulap-in"><i class="icon-linkedin"></i></a>
+											</div>
+										</div>
+	
+										<div class="col-md-4 animate-box" data-animate-effect="fadeIn">
+												<div class="gtco-staff" style="padding-left: 35px">
+													<img src="images\Jernil.jpg" alt="" style="width:190px;height:190px">
+													<h3>MICHAEL JERNIL</h3>
+													Contact:  <a href="https://in.linkedin.com/in/jernil"><i class="icon-linkedin"></i></a></i></a>
+												</div>
+										</div>
+									</div>
+								</div>
+						</div>
+
+
+						<div class="gtco-tab-content tab-content" data-tab-content="8">
+							<div class="col-md-6">
+								<div class="icon icon-xlg">
+									<i class="icon-faq"></i>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h2>FAQ</h2>
+								<p><b>1. Will participation certificate will be provided?</b><br>You will receive participation certificate of kurukshetra</p>
+
+							<p><b>2. Do I need to carry laptops?</b><br>No. You can bring if possible</p>
+
+							<p><b>3. Do I need to have programming knowledge?</b><br>No, your interest is most suffice.</p>
+
+							<p><strong>4.Do I need to carry any ID proof for the visit?<br>It is mandatory to carry your college ID card.</strong></p>
+
+							<p><b>5.What is the cancellation/refund policy?</b><br>No refund on cancellation/no-show at the event.</p>
+
+							<p><b>6. Is there a dress code to be followed?</b><br>Wear comfortable semi-formals</p>
+
+							<p><b>7. Will Lunch be provided?</b><br>No, Lunch will not be provided.</p>
+
+							<br>
+							<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	
 
 <br>
 
 
 
+	<div class="footer">
+		<img src="images/trophy.png" id="trophyImage" height= 60 />
+		<p>Prizes worth INR 1,00,000</p>
+	</div>
+
+	<div style="height: 10px; clear: both;"></div>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	<div class="footer">
-  <img src="images/trophy.png" id="trophyImage" height= 60 />
-  <p>Prizes worth INR 1,00,000</p>
-</div>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
