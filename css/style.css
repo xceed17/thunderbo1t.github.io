@@ -7,39 +7,9 @@
 }
 /* =======================================================
 *
-*   Template Style 
+* 	Template Style 
 *
 * ======================================================= */
-
-
-    .footer #trophyImage {
-    display: inline;
-    height: 40px;
-    width: auto;
-    vertical-align: middle;
-  }
-  
-    .footer p {
-    display: inline;
-    vertical-align: middle;
-  }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: #00a8af;
-    color: rgb(255,255,255);
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 10px 0;
-  }
-
-
-
-
-
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
@@ -48,6 +18,11 @@ body {
   color: #828282;
   background: #fff;
 }
+
+.hello{
+  
+}
+
 
 #page {
   position: relative;
@@ -97,32 +72,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
-}
-
-.titl{
-  font-family: Georgia,serif;
-  font size :10%;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-weight: 300;
-}
-
-.til{
-  font-family: Georgia,serif;
-  font-style: oblique;
-  font-variant: small-caps;
-  font-weight: 300;
-  color:#fff;
-}
-
-.photo{
-  width: 90%;
-  height: 90%;
-}
-
-.sep{
-  width: 70%;
-  height: 70%;
 }
 
 ::-webkit-selection {
