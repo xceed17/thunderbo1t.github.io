@@ -7,7 +7,10 @@
 	<title>XCEED - Ruby On Rails</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='	.text/s'> -->
-	
+
+
+	<link rel="icon" href="images/xceedfulllogoblack.png" sizes="16x16" type="image/png">
+		
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -40,6 +43,21 @@
 		font-family: "Times New Roman", Times, serif; 
 	}
 
+	#page {
+	  position: relative;
+	  overflow-x:hidden;
+	  overflow-y:hidden;
+	  width: 100%;
+	  height: 1700;
+	  -webkit-transition: 0.5s;
+	  -o-transition: 0.5s;
+	  transition: 0.5s;
+	}
+	.offcanvas #page {
+	  overflow: hidden;
+	  position: absolute;
+	}
+
 
 	.table-container {
 	  max-width: 1200px;
@@ -63,7 +81,7 @@
 	  float: left;
 	  margin: 0;
 	  padding: 0;
-	  width: 12.5%;
+	  width: 50%;
 	  text-align: center;
 	  list-style: none;
 	  display: -moz-inline-stack;
@@ -144,36 +162,15 @@
 				
 				<div class="gtco-tabs">
 					<ul class="gtco-tab-nav">
-						<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-information"></i></span><span class="hidden-xs">Intro</span></a></li>
-						<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-calender"></i></span><span class="hidden-xs">Date & Venue</span></a></li>
-						<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-time"></i></span><span class="hidden-xs">Sessions</span></a></li>			
-						<li><a href="#" data-tab="4"><span class="icon visible-xs"><i class="icon-requirements"></i></span><span class="hidden-xs">Requirements</span></a></li>			
-						<li><a href="#" data-tab="5"><span class="icon visible-xs"><i class="icon-credit"></i></span><span class="hidden-xs">Fees</span></a></li>				
-						<li><a href="#" data-tab="6"><span class="icon visible-xs"><i class="icon-pen"></i></span><span class="hidden-xs">Registration</span></a></li>
+						<li class="active"><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-calender"></i></span><span class="hidden-xs">Date & Venue</span></a></li>
 						<li><a href="#" data-tab="7"><span class="icon visible-xs"><i class="icon-people"></i></span><span class="hidden-xs">Organizers</span></a></li>
-						<li><a href="#" data-tab="8"><span class="icon visible-xs"><i class="icon-faq"></i></span><span class="hidden-xs">FAQ</span></a></li>
 					</ul>
 
 					<!-- Tabs -->
 					<div class="gtco-tab-content-wrap">
 
-						<div class="gtco-tab-content tab-content active" data-tab-content="1">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-information"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Intro</h2>
-								
-								<p>Will Be Updated soon</p>
-
-
-
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="2">
+						
+						<div class="gtco-tab-content tab-content active" data-tab-content="2">
 							<div class="col-md-6">
 								<div class="icon icon-xlg">
 									<i class="icon-calender"></i>
@@ -201,67 +198,6 @@
 							</div>
 						</div>
 
-						<div class="gtco-tab-content tab-content" data-tab-content="3">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-time"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h1>Sessions</h1>
-								<div class="row">
-									<div class="col-md-6">
-											
-										<p>Will Be Updated soon</p>
-									
-									</div>
-									<div class="col-md-6">
-										
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="4">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-requirements"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Requirements</h2>
-								
-									<p>Will Be Updated soon</p>
-							  
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="5">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-credit"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Fees</h2>
-								<p><h3>  </h3></p>
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="6">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-pen"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Registration</h2>
-								
-									<p>Event has ended</p>
-
-							</div>
-						</div>
 						<div class="gtco-tab-content tab-content" data-tab-content="7">
 							<div class="col-md-6">
 								<div class="icon icon-xlg">
@@ -293,20 +229,6 @@
 											Contact:<a href="https://in.linkedin.com/in/prabhakaran9397"><i class="icon-linkedin"></i></a>
 										</div>
 									</div>
-							</div>
-						</div>
-
-
-						<div class="gtco-tab-content tab-content" data-tab-content="8">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="icon-faq"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>FAQ</h2>
-							<br>
-							<br>
 							</div>
 						</div>
 					</div>
