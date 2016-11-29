@@ -193,23 +193,19 @@
 		// Click tab menu
 		$('.gtco-tab-nav a').on('click', function(event){
 			
-			var $this = $(this),
-				tab = $this.data('tab');
+	
+			var tab_id = $(this).attr('data-tab');	
 
 			$('.tab-content')
 				.addClass('animated-fast fadeOutDown');
+			$('ul.gtco-tab-nav li').removeClass('active');
+			$('.tab-content').removeClass('active');
 
-			$('.gtco-tab-nav li').removeClass('active');
-			
-			$this
-				.closest('li')
-					.addClass('active')
+			$("#"+tab_id).removeClass('fadeOutDown animated-fast');
+			$(this).closest('li').addClass('active');
+			$("#"+tab_id).addClass('animated-fast  active fadeIn');
+		
 
-			$this
-				.closest('.gtco-tabs')
-					.find('.tab-content[data-tab-content="'+tab+'"]')
-					.removeClass('animated-fast fadeOutDown')
-					.addClass('animated-fast active fadeIn');
 
 
 			autoHeight();
